@@ -87,7 +87,7 @@ function Install-ZabbixAgent {
     Write-Host "Result: $Out"
 
     Write-Host "Installation completed"
-  } -ArgumentList $params
+  } -ArgumentList $([string]::Join(" ", $params))
 
   Write-Host $out
 
