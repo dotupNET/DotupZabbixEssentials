@@ -31,7 +31,7 @@ function Install-ZabbixAgent {
     $Credential = $(Get-Credential)
   )
   
-  $ErrorActionPreference = "Stop"
+  # $ErrorActionPreference = "Stop"
 
   $params = New-Object -TypeName System.Collections.Generic.List[`String];
 
@@ -78,7 +78,7 @@ function Install-ZabbixAgent {
     $MSIArguments.Add($logFile)           #..to this file
 
     # Arguments for zabbix setup
-    $instArgs.ForEach{ $MSIArguments.Add($_.Trim()) };
+    $MSIArguments.Add($instArgs);
 
     Write-Host "MSI args: $([string]::Join(" ", $MSIArguments))";
 
