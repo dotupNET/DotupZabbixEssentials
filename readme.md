@@ -1,6 +1,12 @@
 # DotupZabbixEssentials
 
 Install the Zabbix agent (5.0.2) on remote computers
+
+## Installation
+```powershell
+Install-Module DotupZabbixEssentials
+```
+
 ## Usage
 
 ```powershell
