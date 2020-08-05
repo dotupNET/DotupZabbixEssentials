@@ -12,7 +12,7 @@
 RootModule = 'DotupZabbixEssentials.psm1'
 
 # Die Versionsnummer dieses Moduls
-ModuleVersion = '1.0.3'
+ModuleVersion = '1.0.4'
 
 # Unterstützte PSEditions
 # CompatiblePSEditions = @()

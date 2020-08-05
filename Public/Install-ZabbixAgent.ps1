@@ -31,7 +31,7 @@ function Install-ZabbixAgent {
     $Credential = $(Get-Credential)
   )
   
-  $ErrorActionPreference = Stop
+  #$ErrorActionPreference = Stop
 
   $params = New-Object -TypeName System.Collections.Generic.List[`String];
 
@@ -93,7 +93,7 @@ function Install-ZabbixAgent {
 
 }
 
-# Install-ZabbixAgent -Server 192.168.15.32 -ServerActive  192.168.15.32
+# Install-ZabbixAgent -Server 192.168.15.101 -ServerActive  192.168.15.101
 
 # $servers = Get-ADComputer -filter * -Properties operatingsystem | Where-Object { $_.operatingsystem -like "*server*" }
 
