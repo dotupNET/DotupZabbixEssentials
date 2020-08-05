@@ -31,7 +31,7 @@ function Install-ZabbixAgent {
     $Credential = $(Get-Credential)
   )
   
-  #$ErrorActionPreference = Stop
+  $ErrorActionPreference = "Stop"
 
   $params = New-Object -TypeName System.Collections.Generic.List[`String];
 
